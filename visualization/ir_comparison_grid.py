@@ -22,15 +22,15 @@ ROW_LABELS = ["(1)", "(2)", "(3)", "(4)"]
 
 # Column labels
 COLUMN_LABELS = [
-    "(a)LR Events",
-    "(b)HR Events-GT",
-    "(c)HR Events-Baseline",
-    "(d)HR Events-Ours",
-    "(e)Frame-GT",
-    "(f)Frame \nreconstructed by (a)",
-    "(g)Frame \nreconstructed by (b)",
-    "(h)Frame \nreconstructed by (c)",
-    "(i)Frame \nreconstructed by (d)",
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)",
+    "(e)",
+    "(f)",
+    "(g)",
+    "(h)",
+    "(i)",
 ]
 
 # Dataset base path
@@ -86,14 +86,14 @@ OUTPUT_FILENAME_BASE = (
 # Label position settings - adjust these to fine-tune label placement
 ROW_LABEL_X = 0.001  # X position for row labels (negative to place outside figure)
 ROW_LABEL_FONTSIZE = 14  # Font size for row labels
-ROW_LABEL_WEIGHT = "normal"  # Font weight for row labels
+ROW_LABEL_WEIGHT = "bold"  # Font weight for row labels
 ROW_LABEL_HA = "right"  # Horizontal alignment: 'left', 'center', 'right'
 ROW_LABEL_VA = "center"  # Vertical alignment: 'top', 'center', 'bottom'
 ROW_LABEL_FONT = "Times New Roman"  # Font family for row labels
 
 COL_LABEL_Y = -0.01  # Y position for column labels (negative to place outside figure)
-COL_LABEL_FONTSIZE = 10  # Font size for column labels
-COL_LABEL_WEIGHT = "normal"  # Font weight for column labels
+COL_LABEL_FONTSIZE = 14  # Font size for column labels
+COL_LABEL_WEIGHT = "bold"  # Font weight for column labels
 COL_LABEL_HA = "center"  # Horizontal alignment: 'left', 'center', 'right'
 COL_LABEL_VA = "top"  # Vertical alignment: 'top', 'center', 'bottom'
 COL_LABEL_FONT = "Times New Roman"  # Font family for column labels
