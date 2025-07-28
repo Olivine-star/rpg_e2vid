@@ -29,7 +29,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-T",
         "--window_duration",
-        default=33.33,
+        default=50.0,
         type=float,
         help="Duration of each event window, in milliseconds. Ignored if --fixed_duration=False",
     )

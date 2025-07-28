@@ -55,24 +55,24 @@ FOLDER_MAPPING = {
 # Image selection for each row - specify exact filenames (without extension)
 ROW_EVENT_IMAGES = [
     "events_0000031485",  # Row 1 event image
-    "events_0000062970",  # Row 2 event image
-    "events_0000094455",  # Row 3 event image
-    "events_0000125940",  # Row 4 event image
+    "events_0000031485",  # Row 2 event image
+    "events_0000031485",  # Row 3 event image
+    "events_0000031485",  # Row 4 event image
 ]
 
 ROW_FRAME_IMAGES = [
     "frame_0000031485",  # Row 1 frame image (for reconstructed frames)
-    "frame_0000062970",  # Row 2 frame image
-    "frame_0000094455",  # Row 3 frame image
-    "frame_0000125940",  # Row 4 frame image
+    "frame_0000031485",  # Row 2 frame image
+    "frame_0000031485",  # Row 3 frame image
+    "frame_0000031485",  # Row 4 frame image
 ]
 
 # For GT frames from images folder, specify the original frame filename
 ROW_GT_FRAME_IMAGES = [
-    "frame_00000100",  # Row 1 GT frame from images folder
-    "frame_00000100",  # Row 2 GT frame from images folder
-    "frame_00000100",  # Row 3 GT frame from images folder
-    "frame_00000100",  # Row 4 GT frame from images folder
+    "frame_00000109",  # Row 1 GT frame from images folder
+    "frame_00000106",  # Row 2 GT frame from images folder
+    "frame_00000114",  # Row 3 GT frame from images folder
+    "frame_00000120",  # Row 4 GT frame from images folder
 ]
 
 # Figure settings
