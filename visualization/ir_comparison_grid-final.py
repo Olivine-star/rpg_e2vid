@@ -37,7 +37,7 @@ COLUMN_LABELS = [
 DATASET_PATH = r"C:\Users\steve\Dataset\EVSR\IR"
 
 # Dataset sequences to use for each row
-ROW_SEQUENCES = ["boxes_6dof", "calibration", "poster_6dof"]
+ROW_SEQUENCES = ["office_zigzag", "shapes_6dof", "dynamic_6dof"]
 
 # Folder mapping for each column type
 FOLDER_MAPPING = {
@@ -54,22 +54,22 @@ FOLDER_MAPPING = {
 
 # Image selection for each row - specify exact filenames (without extension)
 ROW_EVENT_IMAGES = [
-    "events_0009736684",  # Row 1 event image
-    "events_0000246098",  # Row 2 event image
-    "events_0004402607",  # Row 3 event image
+    "events_0002556322",  # Row 1 event image
+    "events_0000188910",  # Row 2 event image  # Row 3 event image
+    "events_0003172644",
 ]
 
 ROW_FRAME_IMAGES = [
-    "frame_0009736684",  # Row 1 frame image (for reconstructed frames)
-    "frame_0000246098",  # Row 2 frame image
-    "frame_0004402607",  # Row 3 frame image
+    "frame_0002556322",  # Row 1 frame image (for reconstructed frames)
+    "frame_0000188910",  # Row 2 frame image
+    "frame_0003172644",  # Row 3 frame image
 ]
 
 # For GT frames from images folder, specify the original frame filename
 ROW_GT_FRAME_IMAGES = [
-    "frame_00000356",  # Row 1 GT frame from images folder
-    "frame_00000129",  # Row 2 GT frame from images folder
-    "frame_00000215",  # Row 3 GT frame from images folder
+    "frame_00000117",  # Row 1 GT frame from images folder
+    "frame_00000139",  # Row 2 GT frame from images folder
+    "frame_00000112",  # Row 3 GT frame from images folder
 ]
 
 # Manual override for specific grid positions (HIGHEST PRIORITY)
@@ -90,75 +90,99 @@ MANUAL_IMAGE_OVERRIDE = {
     (
         0,
         1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HR\E2VID_Results\events\events_0010434984.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HR\E2VID_Results\events\events_0003058054.png",
     (
         0,
         2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre\E2VID_Results\events\events_0009700441.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HRPre\E2VID_Results\events\events_0002869264.png",
     (
         0,
         3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0007929589.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0002516458.png",
+    (
+        0,
+        4,
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\images\frame_00000196.png",
+    # (
+    #     0,
+    #     5,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\LR\E2VID_Results\frame_0002556322.png",
     (
         0,
         6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HR\E2VID_Results\frame_0010434984.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HR\E2VID_Results\frame_0003058054.png",
     (
         0,
         7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre\E2VID_Results\frame_0009700441.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HRPre\E2VID_Results\frame_0002869264.png",
     (
         0,
         8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0007929589.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0002516458.png",
+    # (
+    #     1,
+    #     1,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HR\E2VID_Results\events\events_0000263656.png",
+    # (
+    #     1,
+    #     2,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HRPre\E2VID_Results\events\events_0000245714.png",
+    # (
+    #     1,
+    #     3,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0000167260.png",
+    # (
+    #     1,
+    #     4,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\images\frame_00000250.png",
+    # (
+    #     1,
+    #     5,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\LR\E2VID_Results\frame_0003172644.png",
+    # (
+    #     1,
+    #     6,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HR\E2VID_Results\frame_0000263656.png",
+    # (
+    #     1,
+    #     7,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HRPre\E2VID_Results\frame_0000245714.png",
+    # (
+    #     1,
+    #     8,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0000167260.png",
     (
-        1,
-        1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HR\E2VID_Results\events\events_0000263656.png",
-    (
-        1,
         2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre\E2VID_Results\events\events_0000245714.png",
-    (
         1,
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HR\E2VID_Results\events\events_0003409376.png",
+    (
+        2,
+        2,
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HRPre\E2VID_Results\events\events_0003178545.png",
+    (
+        2,
         3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0000167260.png",
-    (
-        1,
-        6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HR\E2VID_Results\frame_0000263656.png",
-    (
-        1,
-        7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre\E2VID_Results\frame_0000245714.png",
-    (
-        1,
-        8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0000167260.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0002755761.png",
     (
         2,
-        1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HR\E2VID_Results\events\events_0004799150.png",
-    (
-        2,
-        2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre\E2VID_Results\events\events_0004519756.png",
-    (
-        2,
-        3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0004147196.png",
+        4,
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\images\frame_00000250.png",
+    # (
+    #     2,
+    #     5,
+    # ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\LR\E2VID_Results\frame_0003172644.png",
     (
         2,
         6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HR\E2VID_Results\frame_0004799150.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HR\E2VID_Results\frame_0003409376.png",
     (
         2,
         7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre\E2VID_Results\frame_0004519756.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HRPre\E2VID_Results\frame_0003178545.png",
     (
         2,
         8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0004147196.png",
+    ): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0002755761.png",
 }
 
 # Figure settings
@@ -172,14 +196,14 @@ OUTPUT_FILENAME_BASE = "ir_academic_comparison2"  # Will add extension automatic
 
 # Label position settings - adjust these to fine-tune label placement
 ROW_LABEL_X = 0.001  # X position for row labels (negative to place outside figure)
-ROW_LABEL_FONTSIZE = 12  # Font size for row labels
+ROW_LABEL_FONTSIZE = 20  # Font size for row labels-12
 ROW_LABEL_WEIGHT = "bold"  # Font weight for row labels
 ROW_LABEL_HA = "right"  # Horizontal alignment: 'left', 'center', 'right'
 ROW_LABEL_VA = "center"  # Vertical alignment: 'top', 'center', 'bottom'
 ROW_LABEL_FONT = "Times New Roman"  # Font family for row labels
 
 COL_LABEL_Y = -0.01  # Y position for column labels (negative to place outside figure)
-COL_LABEL_FONTSIZE = 12  # Font size for column labels
+COL_LABEL_FONTSIZE = 20  # Font size for column labels-12
 COL_LABEL_WEIGHT = "bold"  # Font weight for column labels
 COL_LABEL_HA = "center"  # Horizontal alignment: 'left', 'center', 'right'
 COL_LABEL_VA = "top"  # Vertical alignment: 'top', 'center', 'bottom'
@@ -187,7 +211,7 @@ COL_LABEL_FONT = "Times New Roman"  # Font family for column labels
 
 # Top section labels (Event Stream and Image Reconstruction)
 TOP_LABEL_Y = 1.0  # Y position for top section labels (positive to place above figure)
-TOP_LABEL_FONTSIZE = 14  # Font size for top section labels
+TOP_LABEL_FONTSIZE = 20  # Font size for top section labels-14
 TOP_LABEL_WEIGHT = "bold"  # Font weight for top section labels
 TOP_LABEL_COLOR = "black"  # Color for top section labels (black)
 TOP_LABEL_FONT = "Times New Roman"  # Font family for top section labels

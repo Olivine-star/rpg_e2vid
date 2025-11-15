@@ -37,7 +37,7 @@ COLUMN_LABELS = [
 DATASET_PATH = r"C:\Users\steve\Dataset\EVSR\IR"
 
 # Dataset sequences to use for each row
-ROW_SEQUENCES = ["boxes_6dof", "calibration", "poster_6dof"]
+ROW_SEQUENCES = ["office_zigzag", "shapes_6dof", "dynamic_6dof"]
 
 # Folder mapping for each column type
 FOLDER_MAPPING = {
@@ -54,22 +54,22 @@ FOLDER_MAPPING = {
 
 # Image selection for each row - specify exact filenames (without extension)
 ROW_EVENT_IMAGES = [
-    "events_0009736684",  # Row 1 event image
-    "events_0000246098",  # Row 2 event image
-    "events_0004402607",  # Row 3 event image
+    "events_0000094455",  # Row 1 event image
+    "events_0000188910",  # Row 2 event image
+    "events_0000125940",  # Row 3 event image
 ]
 
 ROW_FRAME_IMAGES = [
-    "frame_0009736684",  # Row 1 frame image (for reconstructed frames)
-    "frame_0000246098",  # Row 2 frame image
-    "frame_0004402607",  # Row 3 frame image
+    "frame_0000094455",  # Row 1 frame image (for reconstructed frames)
+    "frame_0000188910",  # Row 2 frame image
+    "frame_0000125940",  # Row 3 frame image
 ]
 
 # For GT frames from images folder, specify the original frame filename
 ROW_GT_FRAME_IMAGES = [
-    "frame_00000356",  # Row 1 GT frame from images folder
-    "frame_00000129",  # Row 2 GT frame from images folder
-    "frame_00000215",  # Row 3 GT frame from images folder
+    "frame_00000117",  # Row 1 GT frame from images folder
+    "frame_00000139",  # Row 2 GT frame from images folder
+    "frame_00000112",  # Row 3 GT frame from images folder
 ]
 
 # Manual override for specific grid positions (HIGHEST PRIORITY)
@@ -87,78 +87,7 @@ MANUAL_IMAGE_OVERRIDE = {
     # Uncomment and modify these examples as needed:
     # (0, 0): r"C:\Users\steve\Dataset\EVSR\IR\office_zigzag\SR_Test\HR\E2VID_Results\frame_0000094455.png",
     # (1, 4): r"C:\Users\steve\Dataset\EVSR\IR\shapes_6dof\images\frame_00000139.png",
-    (
-        0,
-        1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HR\E2VID_Results\events\events_0010434984.png",
-    (
-        0,
-        2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre\E2VID_Results\events\events_0009700441.png",
-    (
-        0,
-        3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0007929589.png",
-    (
-        0,
-        6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HR\E2VID_Results\frame_0010434984.png",
-    (
-        0,
-        7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre\E2VID_Results\frame_0009700441.png",
-    (
-        0,
-        8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\boxes_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0007929589.png",
-    (
-        1,
-        1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HR\E2VID_Results\events\events_0000263656.png",
-    (
-        1,
-        2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre\E2VID_Results\events\events_0000245714.png",
-    (
-        1,
-        3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0000167260.png",
-    (
-        1,
-        6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HR\E2VID_Results\frame_0000263656.png",
-    (
-        1,
-        7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre\E2VID_Results\frame_0000245714.png",
-    (
-        1,
-        8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\calibration\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0000167260.png",
-    (
-        2,
-        1,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HR\E2VID_Results\events\events_0004799150.png",
-    (
-        2,
-        2,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre\E2VID_Results\events\events_0004519756.png",
-    (
-        2,
-        3,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\events\events_0004147196.png",
-    (
-        2,
-        6,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HR\E2VID_Results\frame_0004799150.png",
-    (
-        2,
-        7,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre\E2VID_Results\frame_0004519756.png",
-    (
-        2,
-        8,
-    ): r"C:\Users\steve\Dataset\EVSR\IR\poster_6dof\SR_Test\HRPre2(Louck-light-p-learn)\E2VID_Results\frame_0004147196.png",
+    # (2, 8): r"C:\Users\steve\Dataset\EVSR\IR\dynamic_6dof\SR_Test\HRPre-Louck-light-p\E2VID_Results\frame_0000125940.png",
 }
 
 # Figure settings
@@ -168,7 +97,7 @@ SUBPLOT_HEIGHT = SUBPLOT_WIDTH * 3 / 4  # 4:3 aspect ratio means height = width 
 FIGURE_SIZE = (COLS * SUBPLOT_WIDTH, ROWS * SUBPLOT_HEIGHT)  # (18, 4.5) for 9x3 grid
 DPI = 1000
 SAVE_FORMATS = ["png", "pdf"]  # Export both PNG and PDF
-OUTPUT_FILENAME_BASE = "ir_academic_comparison2"  # Will add extension automatically
+OUTPUT_FILENAME_BASE = "ir_academic_comparison"  # Will add extension automatically
 
 # Label position settings - adjust these to fine-tune label placement
 ROW_LABEL_X = 0.001  # X position for row labels (negative to place outside figure)
@@ -444,7 +373,6 @@ def create_comparison_figure():
                 row_label,
                 fontsize=ROW_LABEL_FONTSIZE,
                 fontweight=ROW_LABEL_WEIGHT,
-                fontfamily=ROW_LABEL_FONT,
                 color="black",
                 ha="right",  # Right-align so text doesn't overlap with images
                 va="center",
@@ -470,7 +398,6 @@ def create_comparison_figure():
                 col_label,
                 fontsize=COL_LABEL_FONTSIZE,
                 fontweight=COL_LABEL_WEIGHT,
-                fontfamily=COL_LABEL_FONT,
                 color="black",
                 ha="center",
                 va="top",  # Top-align so text doesn't overlap with images
@@ -496,7 +423,6 @@ def create_comparison_figure():
             "Event Stream",
             fontsize=TOP_LABEL_FONTSIZE,
             fontweight=TOP_LABEL_WEIGHT,
-            fontfamily=TOP_LABEL_FONT,
             color=TOP_LABEL_COLOR,
             ha="center",
             va="bottom",
@@ -521,7 +447,6 @@ def create_comparison_figure():
             "Image Reconstruction",
             fontsize=TOP_LABEL_FONTSIZE,
             fontweight=TOP_LABEL_WEIGHT,
-            fontfamily=TOP_LABEL_FONT,
             color=TOP_LABEL_COLOR,
             ha="center",
             va="bottom",
@@ -546,6 +471,9 @@ def create_comparison_figure():
         print(f"Figure saved as: {output_filename}")
 
     print(f"\nAll figures saved: {', '.join(saved_files)}")
+
+    # Show figure
+    plt.show()
 
 
 # ==================== MAIN EXECUTION ====================
